@@ -11,11 +11,11 @@ The engineering review should focus on the trust boundaries rather than only the
 1. Read [README.md](../README.md) for capabilities, setup, and operational boundaries.
 2. Review the [engineering roadmap](roadmap.md), [open GitHub issues](https://github.com/johnvteixido/Public-CLOF/issues), and [Actions history](https://github.com/johnvteixido/Public-CLOF/actions) for tracked follow-up work and verifiable development activity. Roadmap issues are explicitly planned until implementation, tests, and CI are complete.
 3. Read [docs/architecture.md](architecture.md) for the component and data flow.
-3. Follow authentication in `src/server/auth.ts` and its Express integration in `server.ts`.
-4. Review SSRF-resistant retrieval in `src/server/scrape.ts`.
-5. Review the narrow Neon query adapter in `src/server/db.ts`.
-6. Review Gmail token protection in `src/server/crypto.ts` and `src/server/gmail.ts`.
-7. Inspect `tests/server/` and run the commands in the reviewer guide.
+4. Follow authentication in `src/server/auth.ts` and its Express integration in `server.ts`.
+5. Review SSRF-resistant retrieval in `src/server/scrape.ts`.
+6. Review the narrow Neon query adapter in `src/server/db.ts`.
+7. Review Gmail token protection in `src/server/crypto.ts` and `src/server/gmail.ts`.
+8. Inspect `tests/server/` and run the commands in the reviewer guide.
 
 ## Reproduce the checks
 
