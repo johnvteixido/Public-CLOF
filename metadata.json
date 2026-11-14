@@ -1,0 +1,10 @@
+{
+  "name": "Client Lead & Outreach Finder",
+  "description": "Owner-operated business prospecting workspace with grounded discovery, public contact research, a lead pipeline, human-reviewed outreach drafts, and optional Gmail sending.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "SERVER_SIDE_GROUNDED_DISCOVERY",
+    "OWNER_AUTHENTICATED_WORKSPACE",
+    "HUMAN_REVIEWED_OUTREACH"
+  ]
+}

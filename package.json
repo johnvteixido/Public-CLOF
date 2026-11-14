@@ -1,0 +1,66 @@
+{
+  "name": "teixido-lead-outreach-finder",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
+    "start": "node dist/server.cjs",
+    "preview": "vite preview",
+    "clean": "node -e \"const fs=require('node:fs'); for (const target of ['dist','server.js']) fs.rmSync(target,{recursive:true,force:true})\"",
+    "lint": "tsc --noEmit",
+    "lint:eslint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@google/genai": "^2.6.0",
+    "@supabase/supabase-js": "^2.106.1",
+    "@tailwindcss/vite": "^4.1.14",
+    "@vitejs/plugin-react": "^5.0.4",
+    "cheerio": "^1.2.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^4.22.3",
+    "google-auth-library": "^10.6.2",
+    "googleapis": "^172.0.0",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "pino": "^10.3.1",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "@neondatabase/serverless": "1.2.0",
+    "undici": "^7.25.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.59.4",
+    "@typescript-eslint/parser": "^8.59.4",
+    "@vitest/coverage-v8": "^4.1.12",
+    "autoprefixer": "^10.4.21",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.39.4",
+    "pino-pretty": "^13.1.3",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3",
+    "vitest": "^4.1.12"
+  },
+  "description": "Owner-operated business prospecting and outreach workspace",
+  "author": "Teixido Labs",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "overrides": {
+    "qs": "^6.17.1"
+  }
+}
