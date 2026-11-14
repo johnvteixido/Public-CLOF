@@ -53,6 +53,12 @@ See [docs/architecture.md](docs/architecture.md), [docs/security-model.md](docs/
 
 A useful first pass is to read the architecture overview, inspect the authentication and scraper boundaries, then run the automated checks. The reviewer guide maps each engineering claim to its implementation and tests. The repository intentionally documents the limits of its single-owner design rather than presenting it as a multi-tenant or independently audited product.
 
+## Development activity
+
+The public project maintains a prioritized [engineering roadmap](docs/roadmap.md) and a [GitHub issue tracker](https://github.com/johnvteixido/Public-CLOF/issues). Each tracked work item includes context, scope, acceptance criteria, and an explicit planned status. Follow-up implementation should be delivered through focused branches and pull requests, with CI validation before merge.
+
+See the [GitHub Actions history](https://github.com/johnvteixido/Public-CLOF/actions) for reproducible checks on pull requests and updates to `main`. Planned roadmap items are not represented as completed functionality.
+
 ## Local development (Windows PowerShell)
 
 Requirements: Node.js 22.23.4 or newer and npm.
