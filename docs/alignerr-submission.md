@@ -9,12 +9,13 @@ The engineering review should focus on the trust boundaries rather than only the
 ## Recommended reviewer path
 
 1. Read [README.md](../README.md) for capabilities, setup, and operational boundaries.
-2. Read [docs/architecture.md](architecture.md) for the component and data flow.
-3. Follow authentication in `src/server/auth.ts` and its Express integration in `server.ts`.
-4. Review SSRF-resistant retrieval in `src/server/scrape.ts`.
-5. Review the narrow Neon query adapter in `src/server/db.ts`.
-6. Review Gmail token protection in `src/server/crypto.ts` and `src/server/gmail.ts`.
-7. Inspect `tests/server/` and run the commands in the reviewer guide.
+2. Review the [engineering roadmap](roadmap.md), [open GitHub issues](https://github.com/johnvteixido/Public-CLOF/issues), and [Actions history](https://github.com/johnvteixido/Public-CLOF/actions) for tracked follow-up work and verifiable development activity. Roadmap issues are explicitly planned until implementation, tests, and CI are complete.
+3. Read [docs/architecture.md](architecture.md) for the component and data flow.
+4. Follow authentication in `src/server/auth.ts` and its Express integration in `server.ts`.
+5. Review SSRF-resistant retrieval in `src/server/scrape.ts`.
+6. Review the narrow Neon query adapter in `src/server/db.ts`.
+7. Review Gmail token protection in `src/server/crypto.ts` and `src/server/gmail.ts`.
+8. Inspect `tests/server/` and run the commands in the reviewer guide.
 
 ## Reproduce the checks
 
@@ -28,7 +29,7 @@ npm test
 npm run build
 ```
 
-The public repository's initial source snapshot, commit `249eeee91ef0227ecf17a93681a932e0ab2a3cc6`, passed its own GitHub Actions run [#43616369083](https://github.com/johnvteixido/Public-CLOF/actions/runs/43616369083) on November 14, 2026. It passed `npm ci`, both dependency-audit gates, TypeScript, ESLint, **52 tests across 7 files**, and the production build. The run is attached to the public repository, not just the private development PR.
+The initial public source snapshot passed GitHub Actions run [#43616369083](https://github.com/johnvteixido/Public-CLOF/actions/runs/43616369083) on November 14, 2026. The subsequent roadmap update was merged through public PR [#6](https://github.com/johnvteixido/Public-CLOF/pull/6), and the resulting `main` commit passed run [#43617984491](https://github.com/johnvteixido/Public-CLOF/actions/runs/43617984491). The checks include `npm ci`, both dependency-audit gates, TypeScript, ESLint, **52 tests across 7 files**, and the production build. These runs are attached to the public repository, not just the private development PR.
 
 ## Public source mirror
 
