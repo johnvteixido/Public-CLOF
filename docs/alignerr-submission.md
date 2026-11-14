@@ -28,7 +28,7 @@ npm test
 npm run build
 ```
 
-The hardened source revision passed GitHub Actions run [#141](https://github.com/johnvteixido/Client-Lead-and-Outreach-Finder/actions/runs/43569283198) on November 14, 2026. It passed installation, both dependency-audit gates, TypeScript, ESLint, **52 tests across 7 files**, and the production build.
+The public repository's initial source snapshot, commit `249eeee91ef0227ecf17a93681a932e0ab2a3cc6`, passed its own GitHub Actions run [#43616369083](https://github.com/johnvteixido/Public-CLOF/actions/runs/43616369083) on November 14, 2026. It passed `npm ci`, both dependency-audit gates, TypeScript, ESLint, **52 tests across 7 files**, and the production build. The run is attached to the public repository, not just the private development PR.
 
 ## Public source mirror
 
